@@ -31,7 +31,7 @@ long_description = (this_directory / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='CalculusOCR',
-    version='cocr_remote_version',
+    version='0.0.1.2',
     description='CalculusOCR: Using a ViT to solve images of equations .',
     long_description=long_description,
     long_description_content_type='text/markdown',
