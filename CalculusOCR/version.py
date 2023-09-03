@@ -1,3 +1,4 @@
+'''
 import os
 
 
@@ -10,3 +11,4 @@ def string():
     except:
         pass
     return "unknown (git checkout)"
+'''
