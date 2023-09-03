@@ -16,13 +16,6 @@ if "-" in cocr_remote_version:
     v,i,s = cocr_remote_version.split("-")
     cocr_remote_version = v + "+" + i + ".git." + s
 
-assert "-" not in cocr_remote_version
-assert "." in cocr_remote_version
-
-assert os.path.isfile("CalculusOCR/version.py")
-with open("CalculusOCR/VERSION", "w", encoding="utf-8") as fh:
-    fh.write("%s\n" % cocr_remote_version)
-
 
 this_directory = Path(__file__).parent
 long_description = (this_directory / 'README.md').read_text(encoding='utf-8')
